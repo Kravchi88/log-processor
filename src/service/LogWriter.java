@@ -42,7 +42,7 @@ public class LogWriter {
             case RECEIVED -> sb.append("received ").append(entry.amount())
                     .append(" from ").append(entry.otherUser()).toString();
             case WITHDREW -> sb.append("withdrew ").append(entry.amount()).toString();
-            case FINAL_BALANCE -> sb.append("final balance").append(entry.amount()).toString();
+            case FINAL_BALANCE -> sb.append("final balance ").append(entry.amount()).toString();
         };
     }
 }
